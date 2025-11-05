@@ -1,3 +1,6 @@
-console.log('Starting tests...');
-setTimeOut(() => console.log('Waiting 3 seconds...'), 3000);
-console.log('Test completed!');
+(async () => {
+  console.log('Starting tests...');
+  console.log('Waiting 3 seconds...');
+  await new Promise(r => setTimeout(r, 3000));
+  console.log('Test completed!');
+})();
